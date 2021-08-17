@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="extension">
+      <div class="TungShing">
+        <div class="header">
+          <p>Tung Shing</p>
+          <p>通胜</p>
+        </div>
+  
+        <div class="date">
+          <p class="lunar"></p>
+          <p class="gregorian"></p>
+        </div>
+        <p class="day"></p>
+  
+        <div class="yiji">
+          <table>
+            <tr>
+              <th>宜 Auspicious</th>
+              <th>忌 Inauspicious</th>
+            </tr>
+            <tr>
+              <td class="yi"></td>
+              <td class="ji"></td>
+            </tr>
+          </table>
+        </div>
+  
+        <table>
+          <tr>
+            <th>节气 Solar Term</th>
+            <th>生肖 Chinese Zodiac</th>
+          </tr>
+          <tr>
+            <td class="solarTerm"></td>
+            <td class="Zodiac"></td>
+          </tr>
+        </table>
+      </div>
+  
+      <div class="plum">
+        <h3 style="text-align: center;">梅花易数 Plum Blossom Fortune Telling</h3>
+        <label for="ShangYao">Enter number between 0 and 100</label>
+        <input
+          type="number"
+          id="ShangYao"
+          name="UpperTrigram"
+          min="0"
+          max="100"
+        />
+        <button class="divineByNumber">Start</button>
+        <button class="clear">Clear</button>
+      </div>
+
+      <div class="plumResult">
+
+      </div>
+    </div>
+    
+
+    <script src="./popup.js"></script>
+  </body>
+</html>
